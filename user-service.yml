@@ -5,6 +5,11 @@ spring:
   application:
     name: user-service
   datasource:
-    url: jdbc:mysql://localhost:3306/cattastic_users
-    username: root
-    password: secret
+    url: jdbc:mysql://cattastic-mysql:3306/cattastic_users
+    username: cattastic
+    password: cattastic123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update

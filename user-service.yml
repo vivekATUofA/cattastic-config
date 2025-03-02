@@ -5,6 +5,6 @@ spring:
   application:
     name: user-service
   datasource:
-    url: jdbc:mysql://localhost:3306/userdb
+    url: jdbc:mysql://localhost:3306/cattastic_users
     username: root
     password: secret
